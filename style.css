@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial,sans-serif ;
+}
+body{
+    background-image: url("/images/bg.png");
+    background-size: cover;
+
+}
+.heading{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    color: whitesmoke;
+}
+.heading h1{
+    font-size: 45px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading p{
+    font-size: 22px;
+    margin-bottom: 25px;
+
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding:10px 20px;
+} 
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+.about-image{
+    flex: 1;
+    margin-left:350px ;
+    margin-top: 10px;
+    overflow: hidden;
+
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: grey;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+}
+.back-to-home:hover {
+    background-color:black;
+}
+@media screen and (max-width: 768px) {
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font: size 25px; ;
+    }
+    .heading p{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        max-width: 80%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .back-to-home {
+        font-size: 14px; 
+        padding: 8px 16px; 
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.centeralbums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imagestyle{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.changeimagebutton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.changeimagebutton:hover{
+    background-color: #999;
+}
+
+.social-icon img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: auto;
+   
+
+}
+/* .hidden{
+    max-height: 0px;
+   
+}
+
+.nothidden{
+    max-height: 400px;
+} */
+
